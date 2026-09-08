@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+- add required SKILL.md frontmatter (name, description) for the skills CLI ecosystem
+
 ## [0.1.0] - 2026-09-08
 
 ### Added

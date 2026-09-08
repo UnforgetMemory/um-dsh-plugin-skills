@@ -1,3 +1,8 @@
+---
+name: umdshdev
+description: DSH (DeepSeek Harness) plugin development skill system. Routes by trigger words to four professions with on-demand reference loading for token efficiency. Use when developing DSH plugins, tools, config schemas, bundles, LLM adapters, or in-session dynamic Cordis plugins.
+---
+
 # umdshdev — DSH 开发技能统一入口
 
 DSH（DeepSeek Harness）插件开发技能体系。本技能只做**路由**：按触发词选一个分册执行，分册内按需 read references。禁止全读，禁止整份加载。
