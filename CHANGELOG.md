@@ -2,6 +2,18 @@
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-09-09
+
+### Added
+- README.en.md: standalone English README mirroring the Simplified Chinese default, with cross-links, hero banner, badge row, and Ko-fi support section
+- LICENSE: MIT license (Copyright (c) 2026 UnforgetMemory), surfaced via badge in both READMEs
+
+### Changed
+- README.md: redesign as centered bilingual landing page — hero banner (docs/assets/hero.png), badge row, table-based mental models
+
+### Removed
+- _test_img.png: unused image-analysis smoke fixture, no references remain
+
 ## [0.1.1] - 2026-09-09
 
 ### Added
