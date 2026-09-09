@@ -1,6 +1,6 @@
 # DSH 官方开发指南 · 蒸馏精读（中英对照）
 
-> 蒸馏自 DeepSeek Harness 官方英文文档 <https://deepseek-harness.github.io/deepseek-harness/en/develop/>
+> 蒸馏自 DeepSeek Harness 官方英文文档 <https://deepseek-harness.github.io/deepseek-harness/en/develop/basic/>（develop 分区，入口即 basic 首页）
 > 覆盖 `/en/develop/` 全部 **18 个页面**：basic(4) · cordis-tutorial(8) · framework(3) · practice(3)。
 > 每页一文件镜像命名；正文为中文精炼讲解 + 英文术语对照 + 关键代码骨架。
 > 原始官方 Markdown 按 umpp 规范存于共享目录区域 `.um.agents/memory/raw-source/` 供对照；完整细节以官方原文为准。

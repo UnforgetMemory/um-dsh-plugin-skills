@@ -37,4 +37,4 @@ DSH 插件开发的元概念。所有分册的前置，会话内读一次。
 
 ## 深挖
 
-完整精读/边界案例/全量代码骨架 → $(System.Collections.Hashtable[core-concepts.md])（技能内内容层）。官方原文兜底走外链。
+完整精读/边界案例/全量代码骨架 → `guide/basic/index.md`（第一个插件）· `guide/framework/index.md`（插件与生命周期）（技能内内容层）。官方原文兜底走外链。

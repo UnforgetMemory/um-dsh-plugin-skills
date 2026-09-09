@@ -106,4 +106,4 @@ return {
 
 ## 深挖
 
-完整精读/边界案例/全量代码骨架 → $(System.Collections.Hashtable[dynamic-cordis.md])（技能内内容层）。官方原文兜底走外链。
+完整精读/边界案例/全量代码骨架 → `guide/practice/dynamic-cordis.md`（技能内内容层）。官方原文兜底走外链。
