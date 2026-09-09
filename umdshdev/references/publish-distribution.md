@@ -59,6 +59,20 @@ dsh plugin --profile demo remove dsh-hello-plugin
 - 放行 = 允许安装时执行该包代码（sandbox 之外）→ 只放行可信源码 + pin 提交 `#<sha>`。
 - 不想放行 → 分发构建产物：npm（`pnpm publish` 带 `lib/`）或 tarball（`pnpm pack` → `dsh plugin add ./x.tgz`）。
 
+## 故障排查：`declares no dsh.bundle` 警告
+
+警告原文（对账时打印，一次性）：
+
+```
+dsh: warning: <pkg> declares no dsh.bundle — installed as a plain dependency, not a profile layer (a later update that gains one activates it automatically)
+```
+
+- **机制（Fact，官方 CLI reference）**：每次 `dsh plugin` 成功运行后，`dsh.profile.bundles` 与已安装依赖**对账（reconcile）**——声明了 `dsh.bundle` 的加入层栈；无声明的保持普通依赖并一次性警告（即本条）；已移除的移出层栈。
+- **成因**：该包 package.json 缺 `"dsh": { "bundle": { "patch": "./cordis.patch.yml" } }` 声明（典型场景：git 安装的源码包漏声明）；插件行因此永不激活，插件表现为「装了但没反应」。
+- **作者修复**：补 `dsh.bundle` 声明 + 提供 `cordis.patch.yml`（插件行按包名引用）；npm/tarball 发布时 `files` 必须同时含入口文件与 patch 文件；TS 包经 git 分发另需自包含 `prepare`（见上节）。
+- **用户生效**：作者发布修复后 `dsh plugin --profile <name> update <pkg>`——获得声明的依赖经对账**自动**加入 bundles（即警告尾句含义），无需 remove/re-add；bundle 成员变更须**重启 profile** 才生效（运行中的 profile 保持启动时的 bundle 集；profile 层 patch 的热更不涵盖 bundle 成员）。
+- **合法形态**：被插件 import 的库包本就不声明 `dsh.bundle`，此警告可忽略。
+
 ## 易错
 
 - 相对源码路径在 profile 解析下失效 → 用包名或绝对路径。
@@ -66,4 +80,4 @@ dsh plugin --profile demo remove dsh-hello-plugin
 
 ## 深挖
 
-完整精读/边界案例/全量代码骨架 → $(System.Collections.Hashtable[publish-distribution.md])（技能内内容层）。官方原文兜底走外链。
+完整精读/边界案例/全量代码骨架 → `guide/basic/publish.md`（技能内内容层）。官方原文兜底走外链。

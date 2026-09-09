@@ -132,6 +132,7 @@ allowBuilds:
 - 路径为相对路径时按 profile 目录解析；patch 不做深合并，覆盖行必须重述全部键。
 - git 安装不带构建产物——`prepare`（作者）+ `allowBuilds`（用户）缺一即失败。
 - `--patch` overlay 不是另一层 profile 层；app 参数经 app 自有服务解析，不加补丁层。
+- 「装了但没反应」先看警告 `dsh: warning: <pkg> declares no dsh.bundle — installed as a plain dependency…`：包未声明 bundle manifest，对账（reconcile）时只作普通依赖。机制（CLI 行为参考）：每次 `dsh plugin` 成功运行后 `dsh.profile.bundles` 与已安装依赖对账——获得声明的 `update` 自动入层、无声明的保持普通依赖并一次性警告、已移除的移出层栈；bundle 成员变更须重启 profile 生效。作者修复 = 补 `dsh.bundle` 声明 + `cordis.patch.yml`（+ npm 发布时 `files` 含二者）。
 
 ## 关联页面
 

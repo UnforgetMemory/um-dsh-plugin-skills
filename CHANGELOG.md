@@ -2,8 +2,18 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-09-09
+
+### Added
+- umdshdev SKILL.md: full 18-page guide map (group / path / topic) with verified official-site and CLI-reference fallback links
+- umdshdev professions: explicit guide page lists replacing `<page>.md` placeholders
+- publish-distribution reference: troubleshooting for the `declares no dsh.bundle` warning — reconcile mechanism, author fix, consumer activation via update plus profile restart
+- guide/basic/publish: pitfall entry for bundle-less dependencies and the reconcile pass
+
 ### Fixed
 - add required SKILL.md frontmatter (name, description) for the skills CLI ecosystem
+- repair PowerShell-interpolated deep-dive pointers in all umdshdev references, now targeting real guide page paths
+- replace dead `/en/develop/` official links (404; the section has no index page) with the section entry `/en/develop/basic/`
 
 ## [0.1.0] - 2026-09-08
 
