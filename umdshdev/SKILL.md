@@ -34,7 +34,22 @@ read `references/core-concepts.md`（必须，建立 plugin/effect/inject/schema
 | 服务/事件机制 | `references/service-events.md` |
 | LLM 适配 | `references/llm-adapter.md` |
 | 能力拆分 | `references/capability-layering.md` |
-| 深挖精读（全文/边界案例/完整代码） | `guide/`（技能内内容层，按需 read 对应 `<组>/<页>.md`） |
+| 深挖精读（全文/边界案例/完整代码） | `guide/`（技能内内容层，页面地图见下节） |
+
+## guide 全页面地图（官方 develop 指南 18 页蒸馏，按需 read）
+
+| 组 | 页 | 主题 |
+|----|----|------|
+| basic | `guide/basic/index.md` | 你的第一个插件（apply/ctx/cordis.yml/三种形态） |
+| basic | `guide/basic/tool.md` | 构建工具（defineTool 骨架） |
+| basic | `guide/basic/config.md` | 插件配置（Config schema/校验/HMR） |
+| basic | `guide/basic/publish.md` | 打包安装（bundle/profile/层顺序/git 安装陷阱） |
+| cordis-tutorial | `guide/cordis-tutorial/index.md` | 教程总览 |
+| cordis-tutorial | `guide/cordis-tutorial/01-first-plugin.md` … `07-into-the-harness.md` | 逐章一文件：插件/生命周期/服务/事件/配置/组合与HMR/接入 Harness |
+| framework | `guide/framework/index.md` · `service.md` · `events.md` | 生命周期 Fiber / 服务与依赖 / 事件系统 |
+| practice | `guide/practice/index.md` · `dynamic-cordis.md` · `llm-adapter.md` | 三角色能力 / 动态 Cordis / LLM 适配器 |
+
+> 官方原文兜底：<https://deepseek-harness.github.io/deepseek-harness/en/develop/basic/>（develop 分区无独立首页，入口即 basic 首页；各 guide 页顶部有对应官方链接）；CLI/层机制权威补充（仓库内文档）：<https://github.com/deepseek-ai/deepseek-harness/blob/master/apps/cli/reference/README.md>。
 
 ## 纪律
 

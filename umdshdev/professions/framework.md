@@ -48,4 +48,4 @@ PENDING → LOADING → ACTIVE → FAILED | UNLOADING → DISPOSED
 
 ## 按需转向
 
-LLM 适配 → `professions/practice.md`；服务做能力契约 → `professions/practice.md`（三角色，见 `references/capability-layering.md`）；深挖精读 → `guide/framework/<页>.md`。
+LLM 适配 → `professions/practice.md`；服务做能力契约 → `professions/practice.md`（三角色，见 `references/capability-layering.md`）；深挖精读 → `guide/framework/`：`index.md`（插件与生命周期）· `service.md`（服务与依赖）· `events.md`（事件系统）。

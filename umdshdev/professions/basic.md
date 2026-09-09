@@ -48,4 +48,4 @@ ctx 注册的一切（事件/工具/定时器）卸载时自动清理，不要�
 
 ## 按需转向
 
-工具 → `references/tool-authoring.md`；配置 → `references/config-schema.md`；打包 → `references/publish-distribution.md`；机制 → framework 分册；Cordis 底层 → tutorial 分册；深挖精读 → `guide/basic/<页>.md`。
+工具 → `references/tool-authoring.md`；配置 → `references/config-schema.md`；打包 → `references/publish-distribution.md`；机制 → framework 分册；Cordis 底层 → tutorial 分册；深挖精读 → `guide/basic/`：`index.md`（第一个插件）· `tool.md`（工具）· `config.md`（配置）· `publish.md`（打包安装）。

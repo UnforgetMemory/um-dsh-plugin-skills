@@ -60,4 +60,4 @@ ctx.effect(() => {
 
 ## 按需转向
 
-入口：`SKILL.md`；公共前置：`references/core-concepts.md`；机制深潜：`professions/framework.md`；接入实战：`professions/practice.md`；深挖精读：`guide/cordis-tutorial/<章节>.md`；官方原文：<https://deepseek-harness.github.io/deepseek-harness/en/develop/cordis-tutorial/>。
+入口：`SKILL.md`；公共前置：`references/core-concepts.md`；机制深潜：`professions/framework.md`；接入实战：`professions/practice.md`；深挖精读：`guide/cordis-tutorial/`——`index.md`（总览）+ `01-first-plugin.md` … `07-into-the-harness.md`（逐章一文件）；官方原文：<https://deepseek-harness.github.io/deepseek-harness/en/develop/cordis-tutorial/>。

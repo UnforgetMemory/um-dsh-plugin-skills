@@ -43,4 +43,4 @@ read `references/core-concepts.md`（必须）；建议先过 basic + framework 
 
 ## 按需转向
 
-机制疑问回 `professions/framework.md`；基础语法回 `professions/basic.md`；入口路由 `SKILL.md`；深挖精读 `guide/practice/<页>.md`。
+机制疑问回 `professions/framework.md`；基础语法回 `professions/basic.md`；入口路由 `SKILL.md`；深挖精读 → `guide/practice/`：`index.md`（三角色能力）· `dynamic-cordis.md`（动态 Cordis）· `llm-adapter.md`（LLM 适配器）。
